@@ -7,14 +7,16 @@
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; trackingMethod: best;' renderer='antialias:true' gesture-detector>
   
     <a-assets>
-        <a-asset-item id="lugia" src="lugia_pokemon/scene.gltf"></a-asset-item>
+        <a-asset-item id="lugia" src="buster_drone/scene.gltf"></a-asset-item>
     </a-assets>
 
     <!-- handle marker with hiro preset -->
     <a-marker preset='hiro'>
       <a-gltf-model src="#lugia"
       position="0 0 0"
-      scale="0.1 0.1 0.1"></a-gltf-model>
+      scale="0.01 0.01 0.01"
+      animation-mixer></a-gltf-model>
+      
       <!-- <a-image src="corvette_stingray/image.jpg"></a-text> -->
       <!-- <a-text value="Hello" color="red"></a-text> -->
     </a-marker>
